@@ -2,7 +2,8 @@
 pipeline {
     agent {
         dockerfile {
-            args '--net=host'
+            filename 'Dockerfile'
+            additionalBuildArgs '--net=host'
         }
     }
 
