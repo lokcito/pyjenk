@@ -11,4 +11,4 @@ COPY ./src/ /app/src
 
 RUN python /app/src/main.py
 
-EXPOSE 80
+EXPOSE 4567

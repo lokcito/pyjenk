@@ -1,6 +1,10 @@
 // Declarative //
 pipeline {
-    agent { dockerfile true }
+    agent {
+        dockerfile {
+            args '--net=host'
+        }
+    }
 
     stages {
         stage('Build') {
